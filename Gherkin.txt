@@ -1,0 +1,47 @@
+História de Usuário
+
+Personas: 
+URI Judge, Programador iniciante
+
+Modelo inclusivo
+
+História de usuário 
+
+"Eu, sendo usuário,
+gostaria de enviar dois horários como números INTEIROS entre 0-23
+para saber o tempo total do jogo."
+
+"AS, I WOULD LIKE, IN ORDER TO"
+
+Critérios de aceitação:
+a. Uma entrada com "int a" e "int b" 
+b. O jogo terá entre 1 e 24 horas.
+
+Testes:
+x. {(16, 2) -> ("O JOGO DUROU 10 HORA(S)")}
+y. {(0, 0) -> ("O JOGO DUROU 24 HORA(S)")}
+z. {(7, 8) -> ("O JOGO DUROU 1 HORA(S)")}
+
+Gherkin
+
+"Given, When, Then"
+"Dado, Quando, Então"
+
+Dado 2 entradas inteiras a,b entre 0-23
+Quando o calculo for requisitado
+Então o resultado c será a diferença entre a e b .
+
+a   | b  | s
+16  | 2  | 10
+0   | 0  | 24
+7   | 8  | 1
+
+Dado os valores de 16 e 2
+Quando o calculo for requisitado
+Então o resultado será 10
+
+
+Tarefas
+1. Decidir tecnologia (plataforma - Platform Specific Model) -> C99
+2. Codificar e testar
+
